@@ -38,10 +38,45 @@ int.TryParse(texto2, out e);
 
 Console.WriteLine(e);
 
-// Conversão segura 2``
+// Conversão segura 2
 
 string texto3 = "15-b";
 
-int.TryParse(texto3, out int e);
+int.TryParse(texto3, out int f);
 
-Console.WriteLine(e);
+Console.WriteLine(f);
+
+int quantidadeEmEstoque = 30;
+int quantidadeCompra = 4;
+
+if (quantidadeEmEstoque >= quantidadeCompra){
+    Console.WriteLine("Venda realizada.");
+}
+else{
+    Console.WriteLine("Quantidade insuficiente em estoque.");
+}
+
+Console.WriteLine("Digite uma letra: ");
+string? letra = Console.ReadLine();
+
+/*
+if (letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u"){
+    Console.WriteLine("É vogal");
+}
+else{
+    Console.WriteLine("Não é vogal");
+}
+*/
+
+switch (letra){
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+        Console.WriteLine("É vogal");
+        break;
+    default:
+        Console.WriteLine("Não é vogal");
+        break;
+}
