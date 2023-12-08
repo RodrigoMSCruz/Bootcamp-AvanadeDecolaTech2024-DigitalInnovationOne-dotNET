@@ -1,4 +1,5 @@
-﻿using ExemplosFundamentos.Models;
+﻿using System.ComponentModel;
+using ExemplosFundamentos.Models;
 
 // Orientação a objetos
 
@@ -156,3 +157,37 @@ do{
 } while(numeroDigitado != 0);
 
 Console.WriteLine($"Total da soma dos números digitados é: {soma}");
+
+// Array
+Console.WriteLine("");
+
+int[] arrayInteiros = new int[3];
+
+arrayInteiros[0] = 72;
+arrayInteiros[1] = 64;
+arrayInteiros[2] = 50;
+
+for(int ind = 0; ind < arrayInteiros.Length; ind++){
+    Console.WriteLine($"Posição Nº {ind} - {arrayInteiros[ind]}");
+}
+
+foreach(int valor in arrayInteiros){
+    Console.WriteLine(valor);
+}
+
+// Listas
+Console.WriteLine("");
+
+List<string> listaString = new List<string>();
+
+listaString.Add("SP");
+listaString.Add("BA");
+listaString.Add("MG");
+
+for(int contador = 0; contador < listaString.Count; contador++){
+    Console.WriteLine($"Posição Nº {contador} - {listaString[contador]}");
+}
+
+foreach(string item in listaString){
+    Console.WriteLine($"{item}");
+}
