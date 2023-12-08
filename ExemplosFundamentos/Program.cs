@@ -113,3 +113,46 @@ calc.Potencia(3, 3);
 calc.Seno(30);
 calc.Coseno(30);
 calc.Tangente(30);
+calc.RaizQuadrada(9);
+
+// Estruturas de repetição
+// FOR
+
+Console.WriteLine("");
+
+int m = 5;
+for(int contador =0; contador <=10; contador++){
+    Console.WriteLine($"{m} x {contador} = {m * contador}");
+}
+
+// Estruturas de repetição
+// WHILE
+Console.WriteLine("");
+
+m = 5;
+int cont = 1;
+while (cont <= 10){
+    Console.WriteLine($"{m} x {cont} = {m * cont}");
+    cont++;
+    
+    if (cont == 6){
+        break;
+    }
+}
+
+// Estruturas de repetição
+// DO-WHILE
+Console.WriteLine("");
+
+int soma = 0;
+int numeroDigitado = 0;
+
+do{
+    Console.WriteLine("Digite um número (0 para parar): ");
+    numeroDigitado = Convert.ToInt32(Console.ReadLine());
+
+    soma += numeroDigitado;
+
+} while(numeroDigitado != 0);
+
+Console.WriteLine($"Total da soma dos números digitados é: {soma}");
