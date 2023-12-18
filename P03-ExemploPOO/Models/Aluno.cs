@@ -7,6 +7,11 @@ namespace P03_ExemploPOO.Models
 {
     public class Aluno : Pessoa
     {
+        public Aluno(string nome) : base(nome)
+        {
+            
+        }
+
         public double Nota { get; set; }
 
         public override void Apresentar()
