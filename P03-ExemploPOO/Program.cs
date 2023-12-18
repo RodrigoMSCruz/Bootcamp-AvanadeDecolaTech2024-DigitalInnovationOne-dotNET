@@ -10,4 +10,16 @@ c1.ExibirSaldo();
 c1.Sacar(500);
 c1.ExibirSaldo();
 
+//Herança e Polimorfisomo
+Console.WriteLine("");
 
+Aluno a1 = new Aluno();
+a1.Nome = "Leonardo";
+a1.Idade = 20;
+a1.Nota = 9.2;
+a1.Apresentar();
+
+Professor pr1 = new Professor();
+pr1.Nome = "Eduardo";
+pr1.Idade = 30;
+pr1.Apresentar();
